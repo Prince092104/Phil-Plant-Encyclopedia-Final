@@ -1,0 +1,10 @@
+{
+  "common_name": ["common_name", "plant_name", "vernacular_name", "name"],
+  "scientific_name": ["scientific_name", "latin_name", "botanical_name", "sci_name"],
+  "description": ["description", "notes", "detail"],
+  "habitat": ["habitat", "environment", "growth_habitat"],
+  "uses": ["uses", "traditional_uses", "medicinal_uses"],
+  "conservation": ["conservation", "status", "threat_status"],
+  "municipalities": ["municipalities", "location", "locations", "region_province_municipality", "place"],
+  "photos": ["photos", "photo_paths", "photo_urls", "images"]
+}

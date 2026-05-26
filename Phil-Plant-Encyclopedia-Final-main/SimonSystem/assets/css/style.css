@@ -1,0 +1,342 @@
+﻿@font-face {
+    font-family: 'Southern Aire';
+    src: url('../SouthernAire_Personal_Use_Only.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    background: #f4ede0;
+    color: #2e2b24;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+h1, .display-5 {
+    font-family: 'Southern Aire', cursive;
+    letter-spacing: 0.05em;
+    color: #000 !important;
+}
+
+.hero h1 {
+    font-family: 'Southern Aire', cursive;
+    color: #000 !important;
+}
+
+h2, h3, h4, h5, h6, .modal-title {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    letter-spacing: 0.01em;
+}
+
+.summary h2,
+.admin-actions h2,
+.modal-title {
+    font-weight: 700;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.hero {
+    background: linear-gradient(180deg, #f8f1e6 0%, #e9dfcb 100%);
+    color: #2b2318;
+    border-bottom: 1px solid rgba(45, 33, 24, 0.18);
+}
+
+.hero h1 {
+    letter-spacing: 0.02em;
+}
+
+.hero p {
+    opacity: 0.9;
+}
+
+.hero .btn {
+    min-width: 150px;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.search-panel .card,
+.admin-controls,
+.admin-plants .card,
+.login-card {
+    border-radius: 1.2rem;
+}
+
+.search-panel .card,
+.admin-controls,
+.admin-plants .card,
+.login-card {
+    border: 1px solid rgba(78, 62, 45, 0.15);
+    background: rgba(248, 241, 230, 0.96);
+}
+
+.card-body {
+    padding: 1.75rem;
+}
+
+.btn-primary {
+    background-color: #8b5c2d;
+    border-color: #7c4b24;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #a06d37;
+    border-color: #8b5c2d;
+}
+
+.btn-outline-primary {
+    color: #8b5c2d;
+    border-color: #8b5c2d;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: rgba(139, 92, 45, 0.08);
+}
+
+.btn-outline-secondary {
+    color: #5b4f43;
+    border-color: #5b4f43;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+    background-color: rgba(91, 79, 67, 0.1);
+}
+
+.form-control,
+.form-select {
+    background: rgba(255, 251, 244, 0.95);
+    border: 1px solid #c4b29f;
+    color: #37302a;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #8b5c2d;
+    box-shadow: 0 0 0 0.15rem rgba(139, 92, 45, 0.15);
+}
+
+label,
+.form-label {
+    font-weight: 700;
+    color: #3d362b;
+}
+
+.plant-card {
+    border: 1px solid rgba(78, 62, 45, 0.14);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #fff8ed;
+}
+
+.plant-card-clickable {
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.plant-card-clickable:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.9rem 1.8rem rgba(45, 33, 24, 0.16);
+}
+
+.plant-card .card-body {
+    padding: 1.75rem;
+}
+
+.plant-modal-image {
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 0.85rem;
+}
+
+.modal-content {
+    background: #fff8ed;
+    border: 1px solid rgba(78, 62, 45, 0.14);
+}
+
+.modal-header {
+    border-color: rgba(78, 62, 45, 0.12);
+}
+
+.modal-title {
+    color: #2b2318;
+}
+
+.modal-subtitle {
+    color: #5b4f43;
+}
+
+.modal-body h6 {
+    color: #4a3f34;
+}
+
+.plant-card img {
+    border-radius: 0 1rem 1rem 0;
+    object-fit: cover;
+    min-height: 100%;
+}
+
+.plant-card .badge {
+    font-size: 0.88rem;
+    font-weight: 600;
+    background-color: rgba(139, 92, 45, 0.18) !important;
+    color: #7c542b !important;
+    border: 1px solid rgba(139, 92, 45, 0.18);
+    padding: 0.42rem 0.75rem;
+}
+
+.summary h2,
+.admin-actions h2 {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.summary h2,
+.admin-actions h2 {
+    position: relative;
+}
+
+.summary h2::after,
+.admin-actions h2::after {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 2px;
+    background: #8b5c2d;
+    margin-top: 0.75rem;
+}
+
+.description p {
+    margin-top: 0.85rem;
+    margin-bottom: 0;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.photo-thumb {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 120px;
+}
+
+.photo-thumb img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    border: 1px solid #c4b29f;
+}
+
+.photo-thumb span {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: #5b4f43;
+    font-size: 0.9rem;
+}
+
+.empty-state {
+    padding: 2rem;
+    background: #fbf5ec;
+    border: 1px solid #d6c2aa;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    color: #5b4f43;
+    background: #efe4d4;
+}
+
+.admin-plants .table {
+    margin-bottom: 0;
+    background: transparent;
+}
+
+.admin-plants .table thead th {
+    border-bottom: 2px solid #d6c2aa;
+    color: #4a3f34;
+}
+
+.admin-plants .table tbody tr {
+    background: rgba(255, 250, 244, 0.95);
+}
+
+.admin-plants .table tbody tr:hover {
+    background: rgba(233, 224, 212, 0.8);
+}
+
+.status {
+    margin-bottom: 1rem;
+}
+
+/* Modal location badges - themed styling */
+.modal-body .badge {
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.5rem 0.85rem;
+    border-radius: 0.5rem;
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #000;
+}
+
+.modal-body .badge.badge-region {
+    border-left: 3px solid #a06d37;
+}
+
+.modal-body .badge.badge-province {
+    border-left: 3px solid #8b5c2d;
+}
+
+.modal-body .badge.badge-municipality {
+    border-left: 3px solid #6b4423;
+}
+
+@media (max-width: 991px) {
+    .hero {
+        text-align: left;
+    }
+
+    .hero .container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .plant-card img {
+        border-radius: 0 0 1rem 1rem;
+    }
+}
